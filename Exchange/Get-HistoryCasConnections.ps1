@@ -16,10 +16,10 @@
     Does not provide pipeline output.
 .NOTES
     NAME: Get-RpcCasConnections.ps1
-    VERSION: 1.0
+    VERSION: 1.1
     AUTHOR: Tor Ivar Larsen
     CREATED: 22.01.2016
-    LASTEDIT: 22.01.2016
+    LASTEDIT: 25.05.2016
 #>
 [CMDLetBinding()]
 Param(
