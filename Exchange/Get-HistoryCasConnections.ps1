@@ -15,7 +15,7 @@
 .OUTPUTS
     Does not provide pipeline output.
 .NOTES
-    NAME: Get-RpcCasConnections.ps1
+    NAME: Get-HistoryCasConnections.ps1
     VERSION: 1.1
     AUTHOR: Tor Ivar Larsen
     CREATED: 22.01.2016
