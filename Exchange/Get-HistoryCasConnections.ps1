@@ -1,3 +1,26 @@
+<#
+.SYNOPSIS
+    Digs through provided RpcHistoryLogs (exported with Get-RpcHistory.ps1) and compiles a list.
+.DESCRIPTION
+    This script will parse RpcHistoryLogs provided and compile a list of the CAS-users that has connected to the
+    CAS server.
+.PARAMETER RpcHistoryFiles
+    String array with absolute paths to RpcHistoryFiles (e.g. "c:\temp\log.csv","C:\temp\log2.csv").
+    Parameter is mandatory.
+.EXAMPLE
+    Parse the logs provided
+    .\Get-HistoryCasConnections.ps1 -RpcHistoryFiles "C:\temp\log.csv","C:\temp\log2.csv"
+.INPUTS
+    Does not accept pipeline input.
+.OUTPUTS
+    Does not provide pipeline output.
+.NOTES
+    NAME: Get-RpcCasConnections.ps1
+    VERSION: 1.0
+    AUTHOR: Tor Ivar Larsen
+    CREATED: 22.01.2016
+    LASTEDIT: 22.01.2016
+#>
 [CMDLetBinding()]
 Param(
     [Parameter(Mandatory=$true)]
