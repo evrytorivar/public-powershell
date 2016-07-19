@@ -23,8 +23,11 @@ If (!(Test-Path "$Path"))
     {
         $Path = Read-Host "Path not valid. Please provide a valid path."
     }
-    While (Test-Path -ne $true)
+    While ((Test-Path "$Path") -ne $true)
 }
+
+#Trim end of potential backslash
+$Path = $Path.TrimEnd([char]0x005C)
 
 $AuxiliaryClasses |
 Select-Object Name, subClassOf |
